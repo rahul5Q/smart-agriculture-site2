@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breezly Farms</title>
+    <link rel="stylesheet" href="b.css">
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div class="login-container">
+        <h1>Login to Breezely Farms</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+
+            <button type="submit">Login</button>
+        </form>
+        <p id="login-error" style="color: red; display: none;">Invalid username or password!</p>
+    </div>
+    <div id="main-page" class="hidden">
+        <header>
+            <div class="container">
+                <h1>Breezely Farms</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#sensors">Sensors</a></li>
+                        <li><a href="#iot">IoT</a></li>
+                        <li><a href="#irrigation">Irrigation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="sensors" class="card">
+                <h2>Smart Sensors</h2>
+                <p>Revolutionizing agriculture with IoT sensors that measure soil conditions in real-time. Make better decisions with data-driven insights.</p>
+            </section>
+
+            <section id="iot" class="card">
+                <h2>Internet of Things (IoT)</h2>
+                <p>Real-time connectivity that enables farmers to monitor crops, irrigation, and soil conditions remotely using smart devices.</p>
+            </section>
+
+            <section id="irrigation" class="card">
+                <h2>Automated Irrigation</h2>
+                <p>Efficiently manage water resources with automated systems powered by IoT and weather data.</p>
+            </section>
+
+            <section id="contact" class="card">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" required></textarea><br>
+
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Breezly Farms | All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="b.js"></script>
+</body>
+</html>

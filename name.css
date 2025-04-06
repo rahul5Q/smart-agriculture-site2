@@ -1,0 +1,145 @@
+/* styles.css */
+
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #1f1c2c, #928DAB); /* Background gradient */
+    animation: backgroundAnimation 10s ease-in-out infinite; /* Animated background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Login Container Styling */
+.login-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.5);
+    animation: slideIn 1s ease-out; /* Slide-in effect for the login form */
+}
+
+h1 {
+    font-size: 2em;
+    color: #0ff;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px #0ff, 0px 0px 40px #0ff;
+}
+
+input {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #0ff;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+button {
+    background: linear-gradient(45deg, #00d4d4, #0ff);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1.2em;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff6347, #ff4500);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 99, 71, 0.5);
+}
+
+/* Main Page */
+#main-page {
+    display: none;
+    animation: slideInMain 1s ease-out; /* Slide-in for main page */
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Specific Section Colors with Hover Effects */
+#sensors {
+    background: linear-gradient(45deg,green);
+}
+
+#iot {
+    background: linear-gradient(45deg, green);
+}
+
+#irrigation {
+    background: linear-gradient(45deg, green);
+}
+
+#contact {
+    background: linear-gradient(45deg,green);
+}
+
+.card:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Keyframe Animations */
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(45deg, #1f1c2c, #928DAB);
+    }
+    50% {
+        background: linear-gradient(45deg, #a1c4fd, #c2e9fb);
+    }
+    100% {
+        background: linear-gradient(45deg, #1f1c2c, #928DAB);
+    }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInMain {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
